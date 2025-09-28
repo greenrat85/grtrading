@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "GreenRat Trading",
+    "slug": "greenrat-trading",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/natively-dark.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/natively-dark.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a5f3f"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.greenrat.trading",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/natively-dark.png",
+        "backgroundColor": "#1a5f3f"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.greenrat.trading",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/final_quest_240x240.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-router",
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/natively-dark.png",
+          "color": "#1a5f3f"
+        }
+      ]
+    ],
+    "scheme": "greenrat",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "58e589d1-4bf2-4294-9ca8-2c3d1ece3157"
+      }
+    },
+    "owner": "greenrat"
+  }
+}
